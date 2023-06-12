@@ -1,3 +1,3 @@
 for i in range(10):
     
-    print(f"{i+1}"*(9-i))
+    print("*"*(10-i))
