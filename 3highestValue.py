@@ -15,5 +15,5 @@ for i in d.values():
     l.append(i)
     
 l.sort()
-highest=l[:-3:-1]
+highest=l[:-4:-1]
 print(highest)

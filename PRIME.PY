@@ -1,12 +1,18 @@
-n=int(input("Entyer Number: "))
+n=int(input("Enter Number to check Prime Number or NOT: "))
 
-if n==2:
-    print("prime")
-
-else:
-    for i in range(2,n):
-        if n%i == 0:
-            print("not prime")
-            break
+if n==1:
+    print("Number is Not Prime Number") 
+else:    
+    if n==2:
+        print("Number is Prime")
     else:
-        print("prime")
+        if n==3:
+            print("Number is Prime Number")
+        else:
+            for i in range(3,(n//2)+1,2):
+            
+                if n%i==0:
+                    print("Number is Not Prime ")
+                    break
+            else:
+                print("Number is Prime")
